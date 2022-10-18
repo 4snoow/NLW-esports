@@ -31,7 +31,7 @@ Site criado na maratora NLW-eSports proporcionada pela plataforma da Rocketseat.
 ## Contato
 <img align="left" src="https://avatars.githubusercontent.com/4snoow?size=100">
 
-Made with ❤️ by [Gabriel Bastos Santos](https://github.com/4snoow), get in touch!
+Feito com ❤️ por [Gabriel Bastos Santos](https://github.com/4snoow), entre em contato!
 
 <a href="mailto:gabribs14@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email Badge" height="25"></a>&nbsp;
 <a href="https://www.linkedin.com/in/gabriel-bastos-3484a6222" target="_blank"><img src="https://img.shields.io/badge/Linkedin-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" height="25"></a>&nbsp;
