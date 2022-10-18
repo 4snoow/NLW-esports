@@ -1,0 +1,199 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --title-h2-color:hsl(0, 0%, 100%);
+  --title-h3-color:hsl(240, 5%, 65%);
+  --card-background:hsl(257, 16%, 18%);
+  --border-gradient: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);;
+
+  font-size: 62.5%;
+}
+
+/*GLOBAL CONFIGURATION*/
+body{
+  font-size: 1.6rem;
+  min-height: 100vh;
+  width: 100%;
+ 
+ 
+
+  margin-bottom: 4.4rem;
+  padding: 0 2rem;
+
+  background: url('https://i.ibb.co/CMZWV44/nlw.png') top center no-repeat ;
+  background-size: 100% auto;
+  background-color: #121214;
+}
+
+h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 160%;
+  color: var(--title-h2-color);
+}
+
+h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+
+  color: var(--title-h3-color);
+}
+
+header section.profilePicture{
+  padding-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  height: 15rem;
+  text-align: center;
+
+  position: relative;
+
+  
+}
+
+
+header section.profilePicture::before{
+  content: '';
+  
+  height: 12rem;
+  width: 12rem;
+  border-radius: 100%;
+  
+  
+  background: var(--border-gradient);
+  position: absolute;
+
+  animation: topDown 1s ease-out;
+  
+}
+
+header section.profilePicture img{
+  width: 12rem;
+  border-radius: 100%;
+  
+  position: relative;
+  
+  border: 3px solid transparent;
+  border-image: var(--border-gradient) transparent;
+
+  transition: transform 1s;
+  animation: topDown 1s ease-out;
+}
+
+header section.profilePicture a img:hover{
+transform: scale(1.1);
+}
+
+
+section{
+  max-width: 58rem;
+  
+  margin: 0 auto;
+  
+}
+
+section.card{
+  background: var(--card-background);
+  border-radius:8px;
+  position: relative;
+  
+}
+
+section.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px; 
+  border-top: 4px solid transparent;
+  background: var(--border-gradient) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+/* section.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: 8px;
+  background-image: var(--border-gradient);
+} */
+
+ /* section.card::before{
+  content: '';
+  position: absolute;
+  
+  background: var(--border-gradient);
+
+  width: 58rem;
+  height: 4px;
+
+  border-top-right-radius:8px;
+  border-top-left-radius:8px; 
+
+}  */
+
+
+
+section + section{
+  margin-top: 2.4rem;
+}
+
+
+/* CARDS CONFIGURATION */
+main section .myGames{
+  height: 26.4rem;
+}
+
+main section .channelsCard{
+  height: 21.4rem;
+}
+
+main section .myGames{
+  height: 17.6rem;
+}
+
+main section .cardContent{
+padding: 2.4rem 3.2rem;
+
+}
+
+main section .cardContent .titles{
+  margin-bottom: 2.4rem;
+}
+
+.image{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+
+
+@keyframes topDown{
+  from{
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
